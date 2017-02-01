@@ -26,7 +26,7 @@ gulp.task('less', function () {
 
 gulp.task('js', function (cb) {
   return gulp.src([
-      // './vendor/js/*.js',
+      './vendor/js/*.js',
       './src/js/*.js'
     ])
     .pipe(concat('app.min.js'))
