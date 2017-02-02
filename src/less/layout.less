@@ -1,0 +1,28 @@
+@import "var";
+
+body {
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.background-destaque {
+  background-color: @cor-primaria;
+}
+
+.header {
+  .background-destaque;
+
+  &__link {
+    color: #FFF;
+  }
+}
+
+.footer {
+  .background-destaque;
+  bottom: 0;
+  color: #FFF;
+  height: 60px;
+  padding-top: 20px;
+  position: fixed;
+  width: 100%;
+}
