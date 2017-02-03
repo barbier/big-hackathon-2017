@@ -24,12 +24,14 @@
         <h2>Como gostaria de se cadastrar?</h2>
         <ul class="list-inline list-unstyled">
           <li>
-            <a role="button" class="opcoes-cadastro__link btn btn-default">
+            <a id="linkUsuario" role="button"
+            class="opcoes-cadastro__link btn btn-default">
               Usuário
             </a>
           </li>
           <li>
-            <a role="button" class="opcoes-cadastro__link btn btn-default">
+            <a id="linkProfissional" role="button"
+            class="opcoes-cadastro__link btn btn-default">
               Profissional da área
             </a>
           </li>
@@ -90,10 +92,11 @@
             <label>
               Possui consultório próprio?
               <span>Sim</span>
-              <input type="checkbox">
+              <input type="checkbox" id="chkConsultorio">
             </label>
           </div>
-          <div class="form-group form__endereco-consultorio">
+          <div id="enderecoComercial"
+          class="form-group form__endereco-consultorio">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-4">
                 <label for="txtEndereco">Endereço comercial</label>
@@ -145,5 +148,7 @@
     </p>
   </footer>
   <script src="./dist/app.min.js"></script>
+  <!-- <script src="./vendor/jquery-3.1.1.min.js"></script>
+  <script src="./src/js/forms.js"></script> -->
 </body>
 </html>

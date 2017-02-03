@@ -26,8 +26,8 @@ gulp.task('less', function () {
 
 gulp.task('js', function (cb) {
   return gulp.src([
-      './vendor/js/*.js',
-      './src/js/*.js'
+      './vendor/jquery-3.1.1.min.js',
+      './src/js/forms.js'
     ])
     .pipe(concat('app.min.js'))
     .pipe(uglify())
